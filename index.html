@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Viewport</title>
     <style>
-        body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
-        #viewport { width: 100vw; height: 100vh; background-color: #333; }
-        #shapes-button { position: absolute; top: 10px; left: 10px; padding: 10px; background-color: #444; color: white; border: none; cursor: pointer; z-index: 10; }
-        #shapes-button:hover { background-color: #555; }
+        body { margin: 0; overflow: hidden; }
+        #viewport { width: 100vw; height: 100vh; }
+        #shapes-button { position: absolute; top: 10px; left: 10px; }
         #shapes-menu { position: absolute; top: 40px; left: 10px; display: flex; flex-direction: column; }
         .shape-button { margin: 2px; }
-        #properties-panel { position: absolute; top: 10px; left: 120px; display: none; background: #fff; padding: 10px; border: 1px solid #ccc; z-index: 10; }
+        #properties-panel { position: absolute; top: 10px; left: 120px; display: none; background: #fff; padding: 10px; border: 1px solid #ccc; }
         .property { margin-bottom: 10px; }
         .property label { display: block; }
-        .property input { width: 100px; margin-top: 5px; }
-        .property-group { margin-bottom: 15px; }
+        .property input { width: 100px; }
     </style>
 </head>
 <body>
@@ -30,39 +28,21 @@
         <button id="add-torus" class="shape-button">Torus</button>
     </div>
     <div id="properties-panel">
-        <div class="property-group">
-            <h4>Shape Properties</h4>
-            <div class="property">
-                <label for="subdivisions">Subdivisions:</label>
-                <input type="number" id="subdivisions" min="1" step="1" value="8">
-            </div>
-            <div class="property">
-                <label for="width">Width:</label>
-                <input type="number" id="width" step="0.1" value="1">
-            </div>
-            <div class="property">
-                <label for="height">Height:</label>
-                <input type="number" id="height" step="0.1" value="1">
-            </div>
-            <div class="property">
-                <label for="depth">Depth:</label>
-                <input type="number" id="depth" step="0.1" value="1">
-            </div>
+        <div class="property">
+            <label for="subdivisions">Subdivisions:</label>
+            <input type="number" id="subdivisions" min="1" step="1" value="8">
         </div>
-        <div class="property-group">
-            <h4>Position</h4>
-            <div class="property">
-                <label for="pos-x">X:</label>
-                <input type="number" id="pos-x" step="0.1" value="0">
-            </div>
-            <div class="property">
-                <label for="pos-y">Y:</label>
-                <input type="number" id="pos-y" step="0.1" value="0">
-            </div>
-            <div class="property">
-                <label for="pos-z">Z:</label>
-                <input type="number" id="pos-z" step="0.1" value="0">
-            </div>
+        <div class="property">
+            <label for="width">Width:</label>
+            <input type="number" id="width" step="0.1" value="1">
+        </div>
+        <div class="property">
+            <label for="height">Height:</label>
+            <input type="number" id="height" step="0.1" value="1">
+        </div>
+        <div class="property">
+            <label for="depth">Depth:</label>
+            <input type="number" id="depth" step="0.1" value="1">
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
