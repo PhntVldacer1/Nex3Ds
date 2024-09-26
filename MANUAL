@@ -1,0 +1,20 @@
+Shapes:
+First is shapes, click on a shape from the left side of the screen and that shape will spawn
+
+Select:
+To select a shape, just click on it, an orange outline means the object has been selected
+
+Transform:
+To transform a shape, just first spawn it, then you will see a tab poping up, change the stuff that you want like hight or width then after that, select the shape, delete it and spawn it again, and the new spawned shape will have those modifications
+
+Undo:
+To undo just use ctrl+z
+
+Delete:
+If you want to delete a object, just select it and hit delete key
+
+Bug:
+There are some bugs like some shapes spawning weird, to fix it you can just delete the shape and respawn it, then the shape will be good
+
+Subdivisions:
+If you want to add subdivisions, add a shape, then at the tab set how much subdivisions you need, then delete the shape and respawn it and the modifier will be applied
